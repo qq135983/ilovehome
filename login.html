@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/view.css"/>
+</head>
+<body>
+<div class="my-top">
+    <div class="container">
+        <div class="my-text">
+            <span class="glyphicon glyphicon-phone"></span>
+            <span>40012345678</span>
+        </div>
+        <div class="my-login">
+            <a href="login.html" class="btn btn-success">登录</a>
+            <a href="register.html" class="btn btn-success">注册</a>
+        </div>
+    </div>
+    <div id="my-home" class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-2">
+                <a href="start.html">
+                    <img src="img/logo.png"/>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-10 col-md-4">
+                <form class="navbar-right navbar-form">
+                    <div class="form-group has-feedback">
+                        <label for="kw" class="sr-only">搜索关键字:</label>
+                        <input type="text" id="kw" class="form-control" placeholder="产品搜索"/>
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="hidden-xs hidden-sm col-md-6">
+                <img src="img/top.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="navbar" style="background:#C92323;margin-top: 20px;position: relative;z-index: 1000">
+        <div class="container">
+            <div class="navbar-header">
+                <div href="#my-menu" class="navbar-toggle" data-toggle="collapse"style="background: #ffffff">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </div>
+            </div>
+            <div id="my-menu" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="product.html">产品商城</a></li>
+                    <li><a href="news.html">新闻资讯</a></li>
+                    <li><a href="deduct.html">推荐提成</a></li>
+                    <li><a href="appointment.html">在线预约</a></li>
+                    <li><a href="Alliance.html">招商加盟</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="my-dl" style="margin:180px 0 30px 0">
+    <div class="container">
+        <div class="my-register">
+            <h3 class="text-center text-danger" style="font-weight: bold">用户登录</h3>
+            <form ng-cloak class="form-horizontal" style="max-width: 480px; margin:0 auto;border:1px solid #DDDDDD;padding:20px 30px 0 30px;">
+                <div class="form-group" >
+                    <div class="col-sm-4">
+                        <label for="u" class="control-label">请输入用户名或邮箱:</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input id="u" name="u" class="form-control" type="email" placeholder="请输入邮箱"/>
+                    </div>
+                    <div class="col-sm-2">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                <div class="form-group" >
+                    <div class="col-sm-4">
+                        <label for="p" class="control-label">请输入密码:</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input id="p" name="p" class="form-control" type="password" placeholder="请输入密码"/>
+                    </div>
+                    <div class="col-sm-2">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2  col-sm-offset-2">
+                        <button href="#" class="btn btn-success" ng-click="login()">登录</button>
+                    </div>
+                    <div class="col-sm-1">
+                        <a href="register.html" class="btn btn-default">注册</a>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-8">
+                        <a href="#" class="btn btn-danger btn-xs">忘记密码？点这里找回</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top: 100px">
+    <div id="my-bao" class="row">
+        <div class="hidden-xs col-sm-2">
+            <img src="img/start6.png"/>
+            <p>100%正品</p>
+        </div>
+        <div class="hidden-xs col-sm-2">
+            <img src="img/start5.png"/>
+            <p>客户认证好评</p>
+        </div>
+        <div class="hidden-xs col-sm-2">
+            <img src="img/start7.png"/>
+            <p>低价享受</p>
+        </div>
+        <div class="hidden-xs col-sm-2">
+            <img src="img/start8.png"/>
+            <p>快速发货</p>
+        </div>
+        <div class="hidden-xs col-sm-2">
+            <img src="img/start4.png"/>
+            <p>七天退货保障</p>
+        </div>
+        <div class="hidden-xs col-sm-2">
+            <img src="img/start6.png"/>
+            <p>100%满意</p>
+        </div>
+    </div>
+    <div id="my-footer" class="row">
+        <div class="hidden-xs col-sm-2">
+            <ul class="list-unstyled">
+                <li><h4>新手帮助</h4></li>
+                <li><a href="#">如何注册</a></li>
+                <li><a href="#">门店认证</a></li>
+            </ul>
+        </div>
+        <div class="hidden-xs col-sm-2">
+            <ul class="list-unstyled">
+                <li><h4>常见问题</h4></li>
+                <li><a href="#">订单状态</a></li>
+                <li><a href="#">发票说明</a></li>
+            </ul>
+        </div>
+        <div class="hidden-xs col-sm-2">
+            <ul class="list-unstyled">
+                <li><h4>支付方式</h4></li>
+                <li><a href="#">在线支付</a></li>
+                <li><a href="#">银行转账</a></li>
+                <li><a href="#">货到付款</a></li>
+            </ul>
+        </div>
+        <div class="hidden-xs col-sm-2">
+            <ul class="list-unstyled">
+                <li><h4>配送服务</h4></li>
+                <li><a href="#">范围及运费</a></li>
+            </ul>
+        </div>
+        <div class="hidden-xs col-sm-2">
+            <ul class="list-unstyled">
+                <li><h4>售后服务</h4></li>
+                <li><a href="#">退换货政策</a></li>
+                <li><a href="#">退换货流程</a></li>
+                <li><a href="#">联系客服</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <ul class="list-unstyled">
+                <li><h4>服务热线</h4></li>
+                <li><h4 style="color: #B22222;">4005-114-114</h4></li>
+                <li><img src="img/erweima.jpg" width="140" height="150"/></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    $("#fix").click(function () {
+        var dd = $(".fix");
+        if (dd.css("bottom") == '0px') {
+            dd.css("bottom", -419);
+        } else {
+            dd.css("bottom", 0);
+        }
+    })
+</script>
+</body>
+</html>
